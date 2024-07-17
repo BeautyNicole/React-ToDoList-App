@@ -1,0 +1,84 @@
+.container {
+    .header {
+        height: 10rem;
+        padding: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: chocolate;
+
+        h3, p {
+            margin: 0 !important;
+        }
+
+        .avater {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+
+            img {
+                width: 3rem;
+                height: 3rem;
+                border-radius: 50%;
+            }
+            
+            .actions-btn {
+                display: flex;
+                flex-flow: row;
+                justify-content: flex-end;
+
+                p {
+                    font-size: 2rem;
+                    flex-basis: content;
+                    padding-left: 0.5rem;
+                }    
+            }
+
+          
+        }
+    }
+
+    .todolist-item-wrapper {
+        padding: 1rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        text-align: left;
+
+        .checkbox-input {
+            position: absolute;
+            left: -100vw;
+
+            :hover {
+                color: goldenrod;
+            }
+        }
+
+        .checkbox-label {
+            cursor: pointer;
+            align-self: center;
+            display: block;
+            padding: 0.5rem 0;
+        }
+
+        .checkbox-label-finished {
+            text-decoration: line-through;
+            color: salmon;
+            text-decoration-color: salmon;
+        }
+
+    }
+
+    .submit-btn {
+        margin-top: 3rem;
+        background-color: chocolate;
+        width: 8rem;
+        height: 2rem;
+        color: #fff;
+        text-align: center;
+        padding: 0.3rem
+    }
+}
